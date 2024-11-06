@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Финансы - Расходы и Доходы</title>
+</head>
+<body>
+    <h1>Финансы - Расходы и Доходы</h1>
+    <form id="finance-form">
+        <input type="text" id="category" placeholder="Категория" required>
+        <input type="number" id="amount" placeholder="Количество" required>
+        <select id="record_type">
+            <option value="income">Доходы</option>
+            <option value="expense">Расходы</option>
+        </select>
+        <button type="submit">Добавить</button>
+    </form>
+
+    <h2>Текущий Баланс: <span id="balance"></span></h2>
+
+    <h2>История Расходов и доходов:</h2>
+    <div id="records"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
